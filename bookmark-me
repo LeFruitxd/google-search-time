@@ -1,0 +1,8 @@
+javascript: if (
+  !window.location.href.match(/^https?:\/\/www\.google\.com\/search.*/)
+) {
+  alert("You can only use this on google!");
+} else {
+  var newUrl = window.location.href + "&as_qdr=y15";
+  window.location.href = newUrl;
+}
